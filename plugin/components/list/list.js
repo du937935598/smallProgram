@@ -7,13 +7,13 @@ Component({
     this.setData({
       list: [{
         name: '电视',
-        price: 1000
+        price: 10001
       }, {
         name: '电脑',
-        price: 4000
+        price: 40001
       }, {
         name: '手机',
-        price: 3000
+        price: 30001
       }]
     })
   },
