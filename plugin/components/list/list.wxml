@@ -1,6 +1,0 @@
-<view wx:for="{{list}}" wx:key="name">
-  <view>{{item.name}}:{{item.price}}</view>
-</view>
-<view class='color-red' wx:if="{{1===1}}">
-  <view class='color-blue'>你妹的：</view>1等于1竟然为真
-</view>
