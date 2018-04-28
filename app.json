@@ -1,45 +1,54 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/board/board",
-    "pages/search/search",
-    "pages/profile/profile"
+    "pages/invest/invest",
+    "pages/find/find",
+    "pages/account/account"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fa6450",
     "navigationBarTitleText": "Branton",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
   },
   "tabBar": {
-    "color": "#666666",
-    "selectedColor": "#000000",
-    "borderStyle": "white",
-    "backgroundColor": "#f8f9fb",
-    "list": [
-      {
-        "text": "榜单",
-        "pagePath": "pages/home/home",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home-actived.png"
-      },
-      {
-        "text": "搜索",
-        "pagePath": "pages/search/search",
-        "iconPath": "images/search.png",
-        "selectedIconPath": "images/search-actived.png"
-      },
-      {
-        "text": "我的",
-        "pagePath": "pages/profile/profile",
-        "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile-actived.png"
-      }
-    ]
+    "color": "#c6c6c8",
+    "selectedColor": "#fa6450",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-active.png"
+    },
+    {
+      "pagePath": "pages/invest/invest",
+      "text": "理财",
+      "iconPath": "images/invest.png",
+      "selectedIconPath": "images/invest-active.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "images/find.png",
+      "selectedIconPath": "images/find-active.png"
+    },
+    {
+      "pagePath": "pages/account/account",
+      "text": "账户",
+      "iconPath": "images/account.png",
+      "selectedIconPath": "images/account-active.png"
+    }]
   },
   "networkTimeout": {
     "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
     "downloadFile": 20000
-  },
-  "debug": false
+  }
 }

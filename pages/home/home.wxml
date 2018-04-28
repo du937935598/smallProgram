@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class='contenter'>似的发射点风格士大夫似的</view>
+<text>{{title}}</text>

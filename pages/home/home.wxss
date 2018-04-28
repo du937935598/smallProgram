@@ -1,1 +1,9 @@
 /* pages/home/home.wxss */
+.contenter{
+  min-height: 100rpx;
+  color: #333;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  background: #eee;
+}
