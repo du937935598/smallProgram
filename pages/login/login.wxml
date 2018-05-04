@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<text>登陆页面</text>
+<button bindtap="navtabbar">跳转首页方法1</button>
+<button bindtap="navtabbars">跳转首页方法2</button>
+<navigator open-type="reLaunch" url="/pages/home/home">跳转首页方法3</navigator>
+<text>{{msg}}</text>
+<block wx:for="{{item_id}}" wx:key="index">
+  <view class='{{item.id}}'>这数据的id-{{index+1}}：{{item.id}}</view>
+</block>
+<block wx:for="{{item_id}}" wx:key="index" wx:for-item="aaa">
+  <view class='{{aaa.id}}'>这数据的id-{{index+1}}：{{aaa.id}}</view>
+</block>
+
+<view wx:if="{{ifshow}}">判断显隐</view>
+
+<template name="msg">
+  <view>姓名：{{name}}</view>
+  <view>年龄：{{age}}</view>
+  <view>班级{{className}}</view>
+</template>
+
+<template is="msg" data="{{...items}}"/>

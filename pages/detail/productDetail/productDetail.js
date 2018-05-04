@@ -1,4 +1,4 @@
-// pages/account/account.js
+// pages/detail/productDetail/productDetail.js
 Page({
 
   /**
@@ -19,17 +19,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    wx.hideNavigationBarLoading();
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: '个人中心',
-    });
-    wx.showNavigationBarLoading();
+  
   },
 
   /**
@@ -65,5 +62,12 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  // 返回事件
+  back: function (){
+    wx.navigateBack({
+      delta: 1, // 回退到delta（默认1）页面
+    })
   }
 })

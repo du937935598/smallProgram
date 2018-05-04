@@ -1,0 +1,7 @@
+/* pages/media/media.wxss */
+.pigimage{
+  width: 100%;
+}
+.video{
+  width: 100%;
+}

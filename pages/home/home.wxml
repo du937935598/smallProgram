@@ -1,3 +1,8 @@
 <!--pages/home/home.wxml-->
-<view class='contenter'>似的发射点风格士大夫似的</view>
-<text>{{title}}</text>
+<view class="contenter">似的发射点风格士大夫似的</view>
+<text class="title">{{title}}--{{msg}}</text>
+<button bindtap="change">点击事件</button>
+<button bindtap="changeLink">点击跳转理财</button>
+<navigator url='/pages/detail/productDetail/productDetail' hover-class='style'>navigator跳转</navigator>
+<button bindtap="navtabbar">发现</button>
+<button bindtap="showModal">弹窗</button>

@@ -1,0 +1,14 @@
+<!--pages/input/input.wxml-->
+<text>pages/input/input.wxml</text>
+<view class="section">
+  <input type="text" placeholder="text输入键盘" />
+</view>
+<view class="section">
+  <input type="number" placeholder="number输入键盘" />
+</view>
+<view class="section">
+  <input type="digit" placeholder="带小数点的数字键盘"/>
+</view>
+<view class="section">
+  <input type="idcard" placeholder="身份证输入键盘" />
+</view>

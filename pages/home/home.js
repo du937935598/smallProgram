@@ -1,5 +1,6 @@
 // pages/home/home.js
 var app = getApp();
+var comment = require('../comment/comment.js');
 
 Page({
 
@@ -7,7 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title: ''
+    title: '',
+    msg: '默认值'
   },
 
   /**
@@ -32,9 +34,9 @@ Page({
    */
   onShow: function () {
     wx.setNavigationBarTitle({
-      title: '会员优惠',
-    })
-    wx.showNavigationBarLoading()
+      title: '首页',
+    });
+    wx.showNavigationBarLoading();
   },
 
   /**
@@ -55,20 +57,54 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    console.log('下拉刷新')
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+    console.log('上拉触底')
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    return {
+      title: "做一个分享",
+      path: "/pages/find/find",
+      success:function(){
+        wx.showToast({
+          title: "分享成功",
+          icon: "success",
+          duration: 2000
+        })
+      }
+    }
+  },
+
+  // 点击事件
+  change:function(){
+    this.setData({
+      msg: "默认值改变后"
+    })
+  },
+
+  // 点击跳转
+  changeLink: function(){
+    wx.navigateTo({
+      url: '/pages/detail/productDetail/productDetail'
+    })
+  },
+  // 跳转首页
+  navtabbar: function () {
+    wx.switchTab({
+      url: '/pages/find/find',
+    })
+  },
+  // 弹窗
+  showModal:function(){
+    comment.showModal();
   }
 })

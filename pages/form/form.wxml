@@ -1,0 +1,11 @@
+<!--pages/form/form.wxml-->
+<text>表单</text>
+<form bindsubmit="bindsubmit">
+  <checkbox-group bindchange="checkbox">
+    <label><checkbox value="value" />是否同意此协议</label>
+  </checkbox-group>
+  name: <input type="text" name="name" placeholder="输入用户名"/>
+  password: <input type="text" name="password" password placeholder="输入密码"/>
+  <button type="primary" form-type="submit" disabled="{{disabled}}" loading="{{loading}}">提交</button>
+  <button type="primary" form-type="reset" disabled="{{disabled}}">重置</button>
+</form>

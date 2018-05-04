@@ -1,13 +1,20 @@
 {
   "pages":[
-    "pages/home/home",
-    "pages/invest/invest",
+    "pages/map/map",
+    "pages/media/media",
+    "pages/login/login",
+    "pages/input/input",
+    "pages/picker/picker",
+    "pages/form/form",
     "pages/find/find",
-    "pages/account/account"
+    "pages/invest/invest",
+    "pages/home/home",
+    "pages/account/account",
+    "pages/detail/productDetail/productDetail"
   ],
   "window":{
     "backgroundTextStyle": "dark",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#eee",
     "navigationBarBackgroundColor": "#fa6450",
     "navigationBarTitleText": "Branton",
     "navigationBarTextStyle": "#fff",

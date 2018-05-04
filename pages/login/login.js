@@ -1,11 +1,22 @@
-// pages/account/account.js
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    msg: '数据',
+    item_id: [
+      { id: "item_1" },
+      { id: "item_2" },
+      { id: "item_3" }
+    ],
+    ifshow: true,
+    items: {
+      name: 'branton',
+      age: 25,
+      className: "大学"
+    }
   },
 
   /**
@@ -19,17 +30,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    wx.hideNavigationBarLoading();
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: '个人中心',
-    });
-    wx.showNavigationBarLoading();
+  
   },
 
   /**
@@ -65,5 +73,19 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  // 跳转首页
+  navtabbar:function(){
+    wx.switchTab({
+      url: '/pages/home/home',
+    })
+  },
+
+  navtabbars: function () {
+    wx.reLaunch({
+      url: '/pages/home/home',
+    })
+  },
+  
 })

@@ -1,0 +1,16 @@
+<!--pages/media/media.wxml-->
+<text>pages/media/media.wxml</text>
+<audio poster="{{poster}}" name="{{name}}" id="myAudio" author="{{author}}" src="{{src}}" controls loop></audio>
+<button type="primary" size='mini' bindtap="audioPlay">播放</button>
+<button type="primary" size='mini' bindtap="audioPause">暂停</button>
+<button type="primary" size='mini' bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" size='mini' bindtap="audioStart">回到开头</button>
+<slider bindchange="slider3change" show-value/>
+
+<view class="pigimage">
+  <image src="{{srcs}}" mode="widthFix"></image>
+</view>
+
+<video class="video" src="{{video_src}}" controls="{{true}}" duration="300" enable-danmu="{{true}}" danmu-btn="{{true}}" danmu-list="{{danmuList}}" id="myVideo" autoplay="{{false}}" objectFit="fill" poster="{{poster}}" bindtimeupdate="bindtimeupdate"></video>
+<input type="text" bindblur="bindblur"/>
+<button bindtap="sendDanmu">发送弹幕</button>
