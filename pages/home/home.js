@@ -39,6 +39,32 @@ Page({
     wx.showNavigationBarLoading();
   },
 
+  removeTabBarBadge:function(){
+    app.removeTabBarBadge();
+  },
+
+  hideTabBarRedDot:function(){
+    app.hideTabBarRedDot();
+  },
+
+  onTabItemTap(item) {
+    console.log(item.index)
+    console.log(item.pagePath)
+    console.log(item.text)
+  },
+
+  showTabBar:function(){
+    wx.showTabBar({
+      animation: true
+    })
+  },
+
+  hideTabBar: function () {
+    wx.hideTabBar({
+      animation: true
+    })
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

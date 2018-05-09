@@ -1,0 +1,14 @@
+<!--pages/systemInfo/systemInfo.wxml-->
+<view>手机品牌：{{brand}}</view>
+<view>手机型号：{{model}}</view>
+<view>微信设置的语言：{{language}}</view>
+<view>微信版本号：{{version}}</view>
+<view>操作系统版本：{{system}}</view>
+<view>客户端平台：{{platform}}</view>
+<view>客户端基础库版本：{{SDKVersion}}</view>
+<button bindtap="infochange">获取系统信息</button>
+<view wx:if="{{canIUse}}">正确=能用</view>
+<button bindtap="canIUse">获取canIUse信息</button>
+<view>当前网络状态：{{networkType}}</view>
+<button bindtap="networkType">获取网络类型</button>
+<view>获取网络状态变化：{{onNetworkStatusChange}}</view>

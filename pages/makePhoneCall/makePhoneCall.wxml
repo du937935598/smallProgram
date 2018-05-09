@@ -1,0 +1,6 @@
+<!--pages/makePhoneCall/makePhoneCall.wxml-->
+<view>
+  <input type='text' placeholder='请输入手机号' bindinput="phoneNumber"/>
+</view>
+<button bindtap="call">拨打电话</button>
+<button bindtap="scanCode">扫码</button>

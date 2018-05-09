@@ -1,0 +1,40 @@
+<!--pages/chooseImage/chooseImage.wxml-->
+<view class="classname">
+  <view class="myview">
+    <view class="sour">图片来源：
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{sourceType}}">
+        <view class="picker">
+          {{sourceType[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="sour">图片质量：
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{sizeType}}">
+        <view class="picker">
+          {{sizeType[index1]}}
+        </view>
+      </picker>
+    </view>
+    <view class="sour">图片限制：
+      <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{countType}}">
+        <view class="picker">
+          {{countType[index2]}}
+        </view>
+      </picker>
+    </view>
+    <view class="chooseimg">
+      <view>图片预览：{{imagesList.length}}/{{index2 + 1}}</view>
+      <image bindtap="chooseimg" src='/images/add.png'/>
+    </view>
+    <view class='chooseimg'>
+      <block wx:for="{{imagesList}}" wx:key="index">
+        <image bindtap="previewImage" src="{{item}}" data-src="{{item}}"></image>
+      </block>
+    </view>
+
+    <view>
+      <image class='getinfo' src='/images/add.png' bindtap="getinfo" data-src='/images/add.png'></image>
+      <image class='getinfo' src='/images/add.png' bindtap="getinfo1" data-src='/images/add.png'></image>
+    </view>
+  </view>
+</view>

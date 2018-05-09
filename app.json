@@ -1,5 +1,17 @@
 {
   "pages":[
+    "pages/chooseImage/chooseImage",
+    "pages/clipboardData/clipboardData",
+    "pages/makePhoneCall/makePhoneCall",
+    "pages/accelerometer/accelerometer",
+    "pages/systemInfo/systemInfo",
+    "pages/storage/storage",
+    "pages/refresh/refresh",
+    "pages/animation/animation",
+    "pages/canvas/canvas",
+    "pages/home/home",
+    "pages/title/title",
+    "pages/popup/popup",
     "pages/map/map",
     "pages/media/media",
     "pages/login/login",
@@ -8,7 +20,6 @@
     "pages/form/form",
     "pages/find/find",
     "pages/invest/invest",
-    "pages/home/home",
     "pages/account/account",
     "pages/detail/productDetail/productDetail"
   ],

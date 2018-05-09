@@ -1,0 +1,16 @@
+<!--pages/storage/storage.wxml-->
+<view class='add'>
+  <view class='radius'>添加联系人</view>
+</view>
+
+<view class="all">
+  <input type="text" placeholder='请输入你的名字' name="key" value="{{key}}" bindinput="keychange" />
+</view>
+<view class="all">
+  <input type="text" placeholder='请输入你的电话号码' name="phone" value="{{phone}}" bindinput="phonechange" />
+</view>
+<button type="primary" bindtap="setStorage">保存联系人</button>
+<button type="primary" bindtap="removeStorage">删除联系人</button>
+
+<button type="primary" bindtap="setStorage1">保存联系人</button>
+<button type="primary" bindtap="removeStorage1">删除联系人</button>

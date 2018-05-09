@@ -1,0 +1,3 @@
+<!--pages/refresh/refresh.wxml-->
+<text>{{value}}</text>
+<button bindtap="pullnew">涮新</button>

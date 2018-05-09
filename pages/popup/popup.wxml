@@ -1,0 +1,7 @@
+<!--pages/popup/popup.wxml-->
+<text>弹窗</text>
+<button bindtap="showToast">点击弹窗</button>
+<button bindtap="showLoading">点击showLoading弹窗</button>
+<button bindtap="showModal">点击showModal弹窗</button>
+<button bindtap="showActionSheet">点击showActionSheet弹窗</button>
+<view>{{value}}</view>

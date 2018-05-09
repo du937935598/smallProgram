@@ -6,3 +6,7 @@
 <navigator url='/pages/detail/productDetail/productDetail' hover-class='style'>navigator跳转</navigator>
 <button bindtap="navtabbar">发现</button>
 <button bindtap="showModal">弹窗</button>
+<button bindtap="removeTabBarBadge">移除removeTabBarBadge</button>
+<button bindtap="hideTabBarRedDot">移除hideTabBarRedDot</button>
+<button bindtap="showTabBar">showTabBar显示</button>
+<button bindtap="hideTabBar">showTabBar隐示</button>

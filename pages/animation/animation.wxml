@@ -1,0 +1,23 @@
+<!--pages/animation/animation.wxml-->
+<view class="classname">
+  <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+</view>
+
+<scroll-view scroll-y="true">
+  <button bindtap="rotate">旋转</button>
+  <button bindtap="scale">缩放</button>
+  <button bindtap="translate">偏移</button>
+  <button bindtap="skew">倾斜</button>
+  <button bindtap="rotateAddscale">旋转并缩放</button>
+</scroll-view>
+
+
+<canvas canvas-id="myCanvas"
+  style="margin: 5px; border:1px solid #d3d3d3;"
+  bindtouchstart="start"
+  bindtouchmove="move"
+  bindtouchend="end"/>
+
+<view hidden="{{hidden}}">
+  Coordinates: ({{x}}, {{y}})
+</view>

@@ -1,0 +1,6 @@
+<!--pages/accelerometer/accelerometer.wxml-->
+<view>x：{{x}}，y:{{y}}，z：{{z}}</view>
+<button bindtap="jiasudu">加速度</button>
+<view>罗盘角度：{{onCompassChange}}</view>
+<button bindtap="luopan">罗盘</button>
+

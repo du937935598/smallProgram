@@ -1,0 +1,15 @@
+/* pages/chooseImage/chooseImage.wxss */
+.sour{
+  display:flex;
+}
+.chooseimg{
+  border: 1px solid #ddd;
+}
+.chooseimg image{
+  width: 120rpx;
+  height: 120rpx;
+  border: 1px solid #eee;
+}
+.getinfo{
+  transform: rotate(60deg);
+}
