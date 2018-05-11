@@ -1,0 +1,16 @@
+<!--pages/api/apiDetail/apiDetail.wxml-->
+<view>
+{{listDetail.borrowerPOJO.aboutJob}}
+</view>
+<view>
+{{listDetail.borrowerPOJO.cityAt}}
+</view>
+<view>
+{{listDetail.borrowerPOJO.realName}}
+</view>
+<view>
+{{listDetail.loanAgreementUrl}}
+</view>
+<view>
+{{listDetail.product.tips}}
+</view>

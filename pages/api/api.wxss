@@ -1,0 +1,56 @@
+/* pages/api/api.wxss */
+page{
+  background:#eee;
+  min-height: 100%;
+}
+.list{
+  background: #eee;
+}
+.contenter{
+  margin: 20rpx 0rpx;
+  background: #fff;
+}
+.listTitle{
+  line-height: 40rpx;
+  padding: 20rpx 40rpx;
+  color: #333;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.listTitle text{
+  margin-left: 20rpx;
+  color: #ff6000;
+}
+.listMain{
+  width: 100%;
+  display: block;
+  padding: 40rpx;
+  border-bottom: 2rpx dashed #eee;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.listmain-l{
+  float: left;
+  width: 35%;
+}
+.listmain-c{
+  float: left;
+  width: 35%;
+}
+.listmain-r{
+  float: left;
+  width: 30%;
+}
+.listFoot{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20rpx 40rpx;
+  font-size: 28rpx; 
+  display: inline-block;
+}
+.listFoot-l{
+  float: left;
+}
+.listFoot-r{
+  float: right;
+}

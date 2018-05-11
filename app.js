@@ -40,5 +40,6 @@ App({
   },
   onError: function () {
   },
-  name: '全局变量看看能否获取'
+  name: '全局变量看看能否获取',
+  apiOpen: "https://ceshiopen.wanggejinfu.com.cn"
 })

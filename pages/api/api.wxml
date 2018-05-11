@@ -1,0 +1,24 @@
+<!--pages/api/api.wxml-->
+<scroll-view scroll-y="true" class="list">
+  <navigator url="/pages/api/apiDetail/apiDetail?id={{item.pid}}" class="contenter" wx:for="{{list}}" wx:key="index">
+    <view class='listTitle'>{{item.title}}<text>{{item.tips}}</text></view>
+    <view class='listMain'>
+      <view class='listmain-l'>
+        <view>{{item.investRate}}%</view>
+        <view>历史年化收益率</view>
+      </view>
+      <view class='listmain-c'>
+        <view>{{item.cycle}}天</view>
+        <view>期限</view>
+      </view>
+      <view class='listmain-r'>
+        <view>{{item.borrowRate}}%</view>
+        <view>进度</view>
+      </view>
+    </view>
+    <view class='listFoot'>
+      <view class='listFoot-l'>{{item.minInvestAmount}}元起投</view>
+      <view class='listFoot-r'>剩余可投:{{item.maxInvestAmount - item.amount}}元</view>
+    </view>
+  </navigator>
+</scroll-view>

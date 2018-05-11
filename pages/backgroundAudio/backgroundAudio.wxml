@@ -1,0 +1,5 @@
+<!--pages/backgroundAudio/backgroundAudio.wxml-->
+<button bindtap='play'>播放背景音乐</button>
+<button bindtap='stop'>暂停背景音乐</button>
+<button bindtap='end'>停止背景音乐</button>
+<slider show-value value="{{value}}" bindchange="slider"/>

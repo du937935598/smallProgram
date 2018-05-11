@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/api/api",
+    "pages/api/apiDetail/apiDetail",
+    "pages/backgroundAudio/backgroundAudio",
+    "pages/record/record",
     "pages/chooseImage/chooseImage",
     "pages/clipboardData/clipboardData",
     "pages/makePhoneCall/makePhoneCall",
