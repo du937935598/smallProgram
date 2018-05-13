@@ -5,11 +5,11 @@ App({
   onShow: function (shareTicket) {
     wx.setTabBarBadge({
       index: 1,
-      text: '1'
+      text: '5'
     })
     wx.showTabBarRedDot({
       index: 2,
-      text: '1'
+      text: '7'
     })
     wx.setTabBarStyle({
       color: '#9a9a9a',

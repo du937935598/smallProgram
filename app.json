@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/logins/logins",
+    "pages/uploadFile/uploadFile",
+    "pages/home/home",
+    "pages/search/search",
     "pages/api/api",
     "pages/api/apiDetail/apiDetail",
     "pages/backgroundAudio/backgroundAudio",
@@ -13,7 +17,6 @@
     "pages/refresh/refresh",
     "pages/animation/animation",
     "pages/canvas/canvas",
-    "pages/home/home",
     "pages/title/title",
     "pages/popup/popup",
     "pages/map/map",
@@ -24,8 +27,8 @@
     "pages/form/form",
     "pages/find/find",
     "pages/invest/invest",
-    "pages/account/account",
-    "pages/detail/productDetail/productDetail"
+    "pages/detail/productDetail/productDetail",
+    "pages/account/account"
   ],
   "window":{
     "backgroundTextStyle": "dark",

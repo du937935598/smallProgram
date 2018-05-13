@@ -1,0 +1,5 @@
+<!--pages/logins/logins.wxml-->
+<button bindtap='login'>登陆</button>
+<button bindtap='checkSession'>校验用户当前session_key是否有效</button>
+<button bindtap='info'>获取用户信息</button>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>

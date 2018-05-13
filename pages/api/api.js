@@ -14,7 +14,8 @@ Page({
    */
   onLoad: function (options) {
     wx.showToast({
-      title: '',
+      icon: 'loading',
+      title: '正在加载..',
     })
     var that = this
     wx.request({
@@ -32,6 +33,7 @@ Page({
         that.setData({
           list: res.data.body.list
         })
+        wx.hideToast()
       }
     })
   },
