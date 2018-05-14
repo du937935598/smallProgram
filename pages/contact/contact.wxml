@@ -1,0 +1,2 @@
+<!--pages/contact/contact.wxml-->
+<button open-type="contact">客服呢</button>

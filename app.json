@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/contact/contact",
+    "pages/loginsDemo/loginsDemo",
     "pages/logins/logins",
     "pages/uploadFile/uploadFile",
     "pages/home/home",
