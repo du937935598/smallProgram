@@ -1,2 +1,3 @@
 <!--pages/contact/contact.wxml-->
-<button open-type="contact">客服呢</button>
+<button open-type="contact" session-from="weapp">客服呢</button>
+<contact-button type="default-dark" size="20" session-from="weapp"></contact-button>
