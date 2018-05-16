@@ -2,3 +2,47 @@
 .ceshi{
   background: #f00;
 }
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  background: rgb(0, 68, 97);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+.page-content{
+  padding-top: 200rpx;
+}
+.wc{
+  color: #fff;
+  font-size: 30rpx;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+.page-top{
+  height: 100%;
+  width: 750rpx;
+  position: fixed;
+  background: #fff;
+  z-index: 0;
+  transition: All 0.4s ease;
+}
+.page-top image{
+  width: 68rpx;
+  height: 58rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+}
+.text{
+  margin: 20rpx auto;
+  padding-left: 100rpx;
+}
+.c-starel{
+  transform: rotate(0deg) scale(1) translate(60%,0%);
+}
+.c-starel1{
+  transform: rotate(0deg) scale(0.8) translate(50%,0%);
+}
+.c-starel2{
+  transform: rotate(0deg) scale(0.8) translate(50%,0%);
+}

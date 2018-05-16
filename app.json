@@ -1,5 +1,10 @@
 {
   "pages":[
+    "pages/movable/four/four",
+    "pages/movable/three/three",
+    "pages/movable/one/one",
+    "pages/movable/movable",
+    "pages/movable/two/two",
     "pages/contact/contact",
     "pages/loginsDemo/loginsDemo",
     "pages/logins/logins",
