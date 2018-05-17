@@ -16,7 +16,7 @@
       </view>
     </view>
   </view>
-  <view class="page-top {{open ? 'c-starel2': ''}}">
+  <view class="page-top {{open ? 'c-starel2': ''}}" bindtouchstart='tap_start' bindtouchmove='tap_move' bindtouchend='tap_end'>
     <image src='/images/menu.png' bindtap='tab_ch'></image>
     <view class='text'>第四个页面</view>
   </view>

@@ -1,0 +1,9 @@
+<!--pages/tabs/tabs.wxml-->
+<view class='main'>
+  <block wx:for="{{list}}" wx:key="index">
+    <view class='main-content {{curNavId==item.id?"active_"+colors[index]:""}}' data-id="{{item.id}}" data-index="{{index}}" bindtap='switchTap'>
+      <image class='images' src='{{item.icon}}' mode="widthFix"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>

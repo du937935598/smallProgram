@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/webSocket/webSocket",
+    "pages/tabs/tabs",
     "pages/movable/four/four",
     "pages/movable/three/three",
     "pages/movable/one/one",

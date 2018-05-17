@@ -1,48 +1,11 @@
-// pages/movable/four/four.js
+// pages/webSocket/webSocket.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    open: false,
-    mark: 0,
-    newMark: 0,
-    istoright: false
-  },
-
-  tab_ch: function () {
-    this.setData({
-      open: !this.data.open
-    })
-  },
   
-  tap_start: function(e){
-    console.log('起点',e);
-    this.data.mark = this.data.newMark = e.touches[0].pageX
-    console.log('起点','X：', e.touches[0].pageX, 'Y：', e.touches[0].pageY);
-  },
-
-  tap_move:function(e){
-    console.log('移动', e.touches['0'].pageX);
-
-    this.data.newMark = e.touches[0].pageX
-    if (this.data.mark < this.data.newMark){
-      this.setData({
-        istoright: true,
-        open: true
-      })
-    }else{
-      this.setData({
-        istoright: false,
-        open: false
-      })
-    }
-    console.log(this.data.istoright)
-  },
-
-  tap_end: function(e){
-    console.log('重点',e)
   },
 
   /**

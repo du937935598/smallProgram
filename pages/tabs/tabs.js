@@ -1,50 +1,45 @@
-// pages/movable/four/four.js
+// pages/tabs/tabs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    open: false,
-    mark: 0,
-    newMark: 0,
-    istoright: false
+    curNavId: 1,
+    colors: ["red", "orange", "yellow", "green", "purple"],
+    list:[
+      {
+        id: 1,
+        icon: '/images/home-active.png',
+        title: '推存'
+      },
+      {
+        id: 2,
+        icon: '/images/invest-active.png',
+        title: '美甲'
+      },
+      {
+        id: 3,
+        icon: '/images/find-active.png',
+        title: '美容'
+      },
+      {
+        id: 4,
+        icon: '/images/account-active.png',
+        title: '美发'
+      }
+    ]
   },
 
-  tab_ch: function () {
+  switchTap: function (res) {
+    console.log(res)
+    let id = res.currentTarget.dataset.id;
+    let index = res.currentTarget.dataset.index
     this.setData({
-      open: !this.data.open
+      curNavId: id,
+      curIndex: index
     })
   },
-  
-  tap_start: function(e){
-    console.log('起点',e);
-    this.data.mark = this.data.newMark = e.touches[0].pageX
-    console.log('起点','X：', e.touches[0].pageX, 'Y：', e.touches[0].pageY);
-  },
-
-  tap_move:function(e){
-    console.log('移动', e.touches['0'].pageX);
-
-    this.data.newMark = e.touches[0].pageX
-    if (this.data.mark < this.data.newMark){
-      this.setData({
-        istoright: true,
-        open: true
-      })
-    }else{
-      this.setData({
-        istoright: false,
-        open: false
-      })
-    }
-    console.log(this.data.istoright)
-  },
-
-  tap_end: function(e){
-    console.log('重点',e)
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -84,14 +79,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    console.log('aaa')
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+    console.log('bbb')
   },
 
   /**

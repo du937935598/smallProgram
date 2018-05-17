@@ -1,0 +1,4 @@
+<!--pages/webSocket/webSocket.wxml-->
+<button>开启连接</button>
+<button>发送消息</button>
+<button>关闭连接</button>
