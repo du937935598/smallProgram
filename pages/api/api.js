@@ -1,5 +1,5 @@
 // pages/api/api.js
-var apiOpen = getApp();
+var ceshiopen = getApp();
 Page({
 
   /**
@@ -19,7 +19,7 @@ Page({
     })
     var that = this
     wx.request({
-      url: apiOpen.apiOpen + '/query/qapi/product/list.do',
+      url: ceshiopen.ceshiopen + '/query/qapi/product/list.do',
       data:{
         proType: 'NEW_INVESTOR,BANK_BRIDGE,HOUSE_MORTGAGE,CAR_MORTAGE'
       },

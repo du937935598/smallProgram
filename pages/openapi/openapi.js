@@ -1,35 +1,28 @@
-// pages/api/apiDetail/apiDetail.js
-var ceshiopen = getApp();
+// pages/openapi/openapi.js
+var openapi = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    listDetail: ''
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
-   * /query/qapi/product/detail.do
    */
   onLoad: function (options) {
-    var that = this
     wx.request({
-      url: ceshiopen.ceshiopen + '/query/qapi/product/detail.do',
-      data: {
-        pid: options.id
-      },
-      header: {
-        'tnapikey': '6056905ce4f440d6a5b8179d80e5fd4d',
-        'channel': 'h5'
-      },
+      url: openapi.openApi + '/admin.php/Enum/queryEnum.html',
       method: 'GET',
+      header: { 
+        'content-type': 'application/json'
+      },
       dataType: 'json',
-      success: function (res) {
-        that.setData({
-          listDetail: res.data.body
-        })
+      success:function(res){
+        console.log(res);
       }
     })
   },
@@ -45,9 +38,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.setNavigationBarTitle({
-      title: '标的详情',
-    })
+  
   },
 
   /**

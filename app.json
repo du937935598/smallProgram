@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/openapi/openapi",
+    "pages/api/api",
+    "pages/api/apiDetail/apiDetail",
     "pages/webSocket/webSocket",
     "pages/tabs/tabs",
     "pages/movable/four/four",
@@ -13,8 +16,6 @@
     "pages/uploadFile/uploadFile",
     "pages/home/home",
     "pages/search/search",
-    "pages/api/api",
-    "pages/api/apiDetail/apiDetail",
     "pages/backgroundAudio/backgroundAudio",
     "pages/record/record",
     "pages/chooseImage/chooseImage",
