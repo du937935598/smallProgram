@@ -1,0 +1,4 @@
+<!--pages/demo/demo.wxml-->
+<view id='the-id'>哈哈哈</view>
+<button bindtap='queryMultipleNodes'>queryMultipleNodes</button>
+<button bindtap='getWeRunData'>获取卫星运动</button>

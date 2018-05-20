@@ -1,1 +1,5 @@
 <!--pages/openapi/openapi.wxml-->
+
+<view wx:for="{{list}}" wx:key="{{index}}">
+  {{item.type_name}}
+</view>

@@ -1,34 +1,38 @@
-// pages/openapi/openapi.js
-var openapi = getApp();
-
+// pages/demo/demo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: []
+  
+  },
+
+  queryMultipleNodes: function () {
+    var query = wx.createSelectorQuery()
+    query.select('#the-id').boundingClientRect()
+    query.selectViewport().scrollOffset()
+    query.exec(function (res) {
+      res[0].top       // #the-id节点的上边界坐标
+      res[1].scrollTop // 显示区域的竖直滚动位置
+      console.log(res)
+    })
+  },
+
+  getWeRunData:function(){
+    wx.getWeRunData({
+      success(res) {
+        console.log(res)
+        const encryptedData = res.encryptedData
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    wx.request({
-      url: openapi.openApi + '/admin.php/Enum/queryEnum.html',
-      method: 'GET',
-      header: { 
-        'content-type': 'application/json'
-      },
-      dataType: 'json',
-      success:function(res){
-        that.setData({
-          list: res.data.list
-        })
-        console.log(res);
-      }
-    })
+    console.log(new Date().getTime())
   },
 
   /**
