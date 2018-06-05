@@ -1,0 +1,96 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #fafafa;
+  height: 100%;
+}
+.detail{
+  height: 100%;
+}
+.detail-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3rpx 20rpx #B3B3B3;
+}
+.title{
+  font-size: 32rpx;
+  padding: 0 20rpx;
+  text-align: left;
+}
+.desc{
+  overflow: hidden;
+  padding: 20rpx;
+}
+.desc-left{
+  float: left;
+  overflow: hidden;
+}
+.desc-left image{
+  float: left;
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 80rpx;
+  border: 2rpx solid #0382ff;
+  margin-right: 20rpx;
+}
+.desc-text{
+  float: left;
+  font-size: 30rpx;
+  color: #333;
+}
+.desc-text view{
+  font-size: 22rpx;
+  color: #999;
+}
+.desc-text view text{
+  color: #0382ff;
+}
+.desc-right{
+  float: right;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 65rpx;
+}
+
+.detail-content{
+  background: #fff;
+  margin-top: 180rpx;
+  padding: 20rpx 30rpx 50rpx 30rpx;
+  font-size: 24rpx;
+  margin-bottom: 110rpx;
+  color: #333;
+  overflow:hidden;
+  line-height: 50rpx;
+}
+
+.detail-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.detail-footer image{
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.detail-footer text{
+  line-height: 40rpx;
+}
+.footer-left{
+  width: 50%;
+  display: inline-block;
+  padding: 20rpx 0;
+  text-align: center;
+}
+.footer-right{
+  width: 50%;
+  display: inline-block;
+  padding: 20rpx 0;
+  text-align: center;
+}

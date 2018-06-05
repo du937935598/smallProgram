@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="detail">
+  <view class="detail-header">
+    <view class="title">{{detail.title}}</view>
+    <view class="desc">
+      <view class='desc-left'>
+        <image src='{{detail.icon}}'></image>
+        <view class='desc-text'>
+          {{detail.author}}
+          <view><text>{{detail.praise}}</text>个点赞，<text>{{detail.reading}}</text>人看过</view>
+        </view>
+      </view>
+      <view class='desc-right'>{{detail.update_time}}</view>
+    </view>
+  </view>
+  <view class="detail-content">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <view class='detail-footer'>
+    <view class='footer-left'>
+      <navigator url="/pages/index/index" open-type="redirect">
+        <image src='/images/menu.png'></image>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view class='footer-right'>
+      <image src='/images/menu.png'></image>
+      <text>分享</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{navList}}" wx:key="index">{{item.type_name}}</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{navList}}" wx:key="index">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{dataList}}" wx:key="index">
+                  <navigator url="/pages/detail/detail?id={{item.id}}">
+                      <view class="item-ans">
+                          <view class="avatar">
+                              <image class="img" src="{{item.icon}}"></image>
+                          </view>
+                          <view class="expertInfo">
+                              <view class="name">{{item.title}}</view>
+                              <view class="tag">{{item.content}}</view>
+                              <view class="answerHistory">{{item.praise}}个点赞，{{item.reading}}人看过 </view>
+                          </view>
+                      </view> 
+                    </navigator>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
