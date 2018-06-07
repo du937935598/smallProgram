@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+.search{
+  width: 90%;
+  padding: 15rpx 5% 15rpx 5%;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 5rpx 15rpx #e6e6e6;
+}
+.input{
+  width: 76%;
+  padding: 10rpx 5%;
+  float: left;
+  background: #eee;
+  border-radius: 60rpx;
+  overflow: hidden;
+}
+.input image{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 10rpx;
+  margin-right: 10rpx;
+}
+.input input{
+  float: left;
+  width: 430rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 40rpx;
+  background: transparent;
+}
+.button{
+  width: 12%;
+  text-align: right;
+  color: #0382ff;
+  float: right;
+  line-height: 70rpx;
+  font-size: 32rpx;
+}
+
+.likeList{
+  padding: 10rpx 5%;
+  position: fixed;
+  width: 90%;
+  z-index: 1;
+  background: #fff;
+  top: 100rpx;
+}
+.likeList navigator{
+  font-size: 28rpx;
+  color: #333;
+  line-height: 70rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+}
+.likeList navigator text{
+  float: left;
+}
+.likeList navigator image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 25rpx;
+  float: right;
+}
+
+.content{
+  background: #fff;
+  margin-top: 130rpx;
+}

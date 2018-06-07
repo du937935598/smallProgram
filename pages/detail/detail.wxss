@@ -16,6 +16,7 @@ page{
 .title{
   font-size: 32rpx;
   padding: 0 20rpx;
+  line-height: 60rpx;
   text-align: left;
 }
 .desc{
@@ -28,19 +29,19 @@ page{
 }
 .desc-left image{
   float: left;
-  width: 65rpx;
-  height: 65rpx;
+  width: 75rpx;
+  height: 75rpx;
   border-radius: 80rpx;
   border: 2rpx solid #0382ff;
   margin-right: 20rpx;
 }
 .desc-text{
   float: left;
-  font-size: 30rpx;
+  font-size: 32rpx;
   color: #333;
 }
 .desc-text view{
-  font-size: 22rpx;
+  font-size: 28rpx;
   color: #999;
 }
 .desc-text view text{
@@ -48,20 +49,20 @@ page{
 }
 .desc-right{
   float: right;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #999;
   line-height: 65rpx;
 }
 
 .detail-content{
   background: #fff;
-  margin-top: 180rpx;
+  margin-top: 200rpx;
   padding: 20rpx 30rpx 50rpx 30rpx;
-  font-size: 24rpx;
-  margin-bottom: 110rpx;
+  font-size: 30rpx;
+  margin-bottom: 140rpx;
   color: #333;
   overflow:hidden;
-  line-height: 50rpx;
+  line-height: 60rpx;
 }
 
 .detail-footer{
@@ -70,27 +71,47 @@ page{
   width: 100%;
   background: #fff;
   color: #333;
-  font-size: 28rpx;
+  font-size: 32rpx;
   overflow: hidden;
 }
 .detail-footer image{
   vertical-align: middle;
-  width: 40rpx;
-  height: 40rpx;
+  width: 60rpx;
+  height: 60rpx;
   margin-right: 10rpx;
 }
 .detail-footer text{
-  line-height: 40rpx;
+  line-height: 60rpx;
 }
 .footer-left{
   width: 50%;
-  display: inline-block;
-  padding: 20rpx 0;
+  float: left;
   text-align: center;
+  font-size: 32rpx;
+  padding-right:0rpx;
+  padding-left:0rpx;
+  line-height: normal;
+  border-radius: 0;
+  color: #333;
+  border: none;
+}
+.footer-left navigator{
+  padding: 30rpx 0;
 }
 .footer-right{
   width: 50%;
-  display: inline-block;
-  padding: 20rpx 0;
+  padding: 30rpx 0;
   text-align: center;
+  float: right;
+  font-size: 32rpx;
+  padding-right:0rpx;
+  padding-left:0rpx;
+  line-height: normal;
+  border-radius: 0;
+  color: #333;
+  border: none;
+  background-color:#fff;
 }
+button.footer-right::after {
+  border: 0;
+} 

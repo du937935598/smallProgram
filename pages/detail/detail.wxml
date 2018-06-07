@@ -1,6 +1,6 @@
 <!--pages/detail/detail.wxml-->
 <import src="../../wxParse/wxParse.wxml"/> 
-<view class="detail">
+<view class="detail" bindtouchstart='tap_start' bindtouchmove='tap_move'>
   <view class="detail-header">
     <view class="title">{{detail.title}}</view>
     <view class="desc">
@@ -19,14 +19,14 @@
   </view>
   <view class='detail-footer'>
     <view class='footer-left'>
-      <navigator url="/pages/index/index" open-type="redirect">
+      <navigator url="/pages/index/index">
         <image src='/images/menu.png'></image>
         <text>首页</text>
       </navigator>
     </view>
-    <view class='footer-right'>
-      <image src='/images/menu.png'></image>
-      <text>分享</text>
-    </view>
+    <button class='footer-right' open-type='share'>
+        <image src='/images/share1.png'></image>
+        <text>分享</text>
+    </button>
   </view>
 </view>

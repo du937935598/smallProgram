@@ -20,11 +20,10 @@ Page({
     //  高度自适应
     wx.getSystemInfo({
       success: function (res) {
-        console.log(res);
         var clientHeight = res.windowHeight,
           clientWidth = res.windowWidth,
           rpxR = 750 / clientWidth;
-        var calc = clientHeight * rpxR - 79;
+        var calc = clientHeight * rpxR - 180;
         console.log(calc)
         that.setData({
           winHeight: calc
@@ -43,6 +42,13 @@ Page({
         that.apiQuery(res.data.list['0'].id);
         wx.hideToast()
       }
+    });
+  },
+
+  // 去搜索
+  goSearch:function(){
+    wx.navigateTo({
+      url: '/pages/search/search',
     })
   },
 
@@ -70,14 +76,12 @@ Page({
     this.setData({
       currentTab: e.detail.current
     });
-    console.log(e);
     this.apiQuery(this.data.navList[e.detail.current].id);
     this.checkCor();
   },
   // 点击标题切换当前页时改变样式
   swichNav: function (e) {
     var cur = e.target.dataset.current;
-    console.log(e);
     if (this.data.currentTaB == cur) { 
       return false; 
     }else {
@@ -106,5 +110,12 @@ Page({
         scrollLeft: 0
       })
     }
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    console.log('aaaa')  
   }
 })

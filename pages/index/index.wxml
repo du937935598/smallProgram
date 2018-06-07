@@ -3,6 +3,9 @@
     <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
         <view class="tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{navList}}" wx:key="index">{{item.type_name}}</view>
     </scroll-view>
+    <view class='search'>
+      <view class='search-input' bindtap='goSearch'><image src='/images/search.png'></image>有问题，找答案</view>
+    </view>
     <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
      style="height:{{winHeight}}rpx">
         <swiper-item wx:for="{{navList}}" wx:key="index">
@@ -11,7 +14,7 @@
                   <navigator url="/pages/detail/detail?id={{item.id}}">
                       <view class="item-ans">
                           <view class="avatar">
-                              <image class="img" src="{{item.icon}}"></image>
+                              <image class="img" src="{{item.icon}}" mode='widthFix'></image>
                           </view>
                           <view class="expertInfo">
                               <view class="name">{{item.title}}</view>

@@ -8,7 +8,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    detail: ''
+    detail: '',
+    mark: 0,
+    newMark: 0
   },
 
   /**
@@ -20,8 +22,8 @@ Page({
       url: app.openApi + '/index.php/Article/queryOne.html?',
       method: 'GET',
       dataType: 'json',
-      // data: { "id": options.id },
-      data: { "id": 1 },
+      data: { "id": options.id },
+      // data: { "id": 1 },
       success: function (res) {
         that.setData({
           detail: res.data
@@ -32,6 +34,25 @@ Page({
         WxParse.wxParse('article', 'html', res.data.content, that, 5);
       }
     })
+  },
+
+  navigate:function(){
+    wx.redirectTo({
+      url: '/pages/index/index',
+    })
+  },
+
+  tap_start: function (e) {
+    this.data.mark = this.data.newMark = e.touches[0].pageX
+  },
+
+  tap_move: function (e) {
+    this.data.newMark = e.touches[0].pageX
+    if ((this.data.newMark - this.data.mark) > 100 ) {
+      wx.navigateBack({
+        delta:1
+      })
+    }
   },
 
   /**
@@ -63,13 +84,13 @@ Page({
   },
   
   onPageScroll:function(e){
-    console.log(e);
+    
   },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    
   },
 
   /**
