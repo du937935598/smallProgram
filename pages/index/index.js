@@ -61,9 +61,6 @@ Page({
       data: { "type": val},
       success: function (res) {
         var datas = res.data;
-        for (var i = 0; i < datas.length; i++){
-          datas[i].content = datas[i].content.replace(/<[^>]+>/g, "")
-        }
         that.setData({
           dataList: datas
         });

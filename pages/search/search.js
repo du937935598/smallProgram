@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    searchList: []
+    searchList: [],
+    keyworld: ''
   },
 
   /**
@@ -18,15 +19,17 @@ Page({
   },
 
   searchs:function(e){
+    this.data.keyworld = e.detail.value;
+  },
+
+  search:function(){
     var that = this;
-    console.log(e)
-    console.log(e.detail.value !== '')
-    if (e.detail.value !== ''){
+    if (that.data.keyworld !== '') {
       wx.request({
         url: app.openApi + '/index.php/Article/contentLike.html',
         method: 'GET',
         dataType: 'json',
-        data: { "like": e.detail.value },
+        data: { "like": that.data.keyworld },
         success: function (res) {
           console.log(res.data);
           that.setData({
@@ -34,7 +37,7 @@ Page({
           });
         }
       })
-    }else{
+    } else {
       that.setData({
         searchList: []
       });
@@ -42,24 +45,22 @@ Page({
     }
   },
 
-  channl:function(){
-    wx.navigateBack({
-      delta: 1
-    })
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    wx.showToast({
+      title: '由于服务武器扛不住，不敢用输入同时搜索，除非能被富婆包养',
+      icon: 'none',
+      duration: 4000
+    })
   },
 
   /**

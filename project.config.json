@@ -9,10 +9,7 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "1.9.98",
-	"appid": "wx060a98dcaf58a0a8",
+	},	"appid": "wx060a98dcaf58a0a8",
 	"projectname": "xiaochengxu",
 	"isGameTourist": false,
 	"condition": {

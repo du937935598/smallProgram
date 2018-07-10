@@ -2,9 +2,9 @@
 <view class='search'>
   <view class='input'>
     <image src='/images/search.png'></image>
-    <input type="text" confirm-type="搜索" placeholder-style="color: #999" placeholder="你想知道的不一定有" focus="true" bindinput='searchs' />
+    <input type="text" focus="true" confirm-type="搜索" placeholder-style="color: #999" placeholder="你想知道的不一定有" focus="true" bindinput='searchs' />
   </view>
-  <text class='button' bindtap='channl'>取消</text>
+  <text class='button' bindtap='search'>搜索</text>
 </view>
 <view class="likeList">
   <navigator wx:for="{{searchList}}" wx:key="index" url="/pages/detail/detail?id={{item.id}}">
@@ -12,4 +12,4 @@
     <image src='/images/xie.png'></image>
   </navigator>
 </view>
-<view class='content'>sdsdsd</view>
+<view class='content'>暂无记录，请输入您要搜索的关键词</view>

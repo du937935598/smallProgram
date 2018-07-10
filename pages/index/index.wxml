@@ -18,7 +18,7 @@
                           </view>
                           <view class="expertInfo">
                               <view class="name">{{item.title}}</view>
-                              <view class="tag">{{item.content}}</view>
+                              <view class="tag">{{item.introduction}}</view>
                               <view class="answerHistory">{{item.praise}}个点赞，{{item.reading}}人看过 </view>
                           </view>
                       </view> 

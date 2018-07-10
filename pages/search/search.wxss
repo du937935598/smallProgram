@@ -69,4 +69,7 @@
 .content{
   background: #fff;
   margin-top: 130rpx;
+  font-size: 24rpx;
+  color: #999;
+  padding: 0 5%;
 }
