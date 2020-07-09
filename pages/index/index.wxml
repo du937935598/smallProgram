@@ -1,30 +1,31 @@
 <!--index.wxml-->
-<view >
-    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
-        <view class="tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{navList}}" wx:key="index">{{item.type_name}}</view>
-    </scroll-view>
-    <view class='search'>
-      <view class='search-input' bindtap='goSearch'><image src='/images/search.png'></image>有问题，找答案</view>
-    </view>
-    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
-     style="height:{{winHeight}}rpx">
-        <swiper-item wx:for="{{navList}}" wx:key="index">
-            <scroll-view scroll-y="true" class="scoll-h" >
-                <block wx:for="{{dataList}}" wx:key="index">
-                  <navigator url="/pages/detail/detail?id={{item.id}}">
-                      <view class="item-ans">
-                          <view class="avatar">
-                              <image class="img" src="{{item.icon}}" mode='widthFix'></image>
-                          </view>
-                          <view class="expertInfo">
-                              <view class="name">{{item.title}}</view>
-                              <view class="tag">{{item.introduction}}</view>
-                              <view class="answerHistory">{{item.praise}}个点赞，{{item.reading}}人看过 </view>
-                          </view>
-                      </view> 
-                    </navigator>
+<view class="index">
+    <!-- <view class="main">
+        <view class="tab-item {{currentTab==index?'active':''}}" bindtap="swichNav" wx:for="{{navList}}" wx:key="index">{{item.type_name}}</view>
+    </view> -->
+    <view class="main" style="height:{{screen.winHeight}}rpx; padding-top: {{screen.statusBarHeight}}rpx;">
+        <view class="title">Branton</view>
+        <view class="desc">Most of you are familiar with the virtues of a programmer. There are three: laziness, impatience, and arrogance.</view>
+        <view class="page-section page-section-spacing swiper">
+            <swiper indicator-dots="{{true}}" autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}" next-margin="90rpx" previous-margin="30rpx" style="height:{{screen.item}}rpx;">
+                <block wx:for="{{navList}}" wx:key="*this">
+                    <swiper-item>
+                        <view class="swiper-item">
+                            <view class="item">
+                                <image mode="scaleToFill" src="{{item.icon}}" /> 
+                                <view class="content {{index % 2 !== 0 ? 'color':''}}" style="top: {{screen.top}}rpx">
+                                    <text class="name">{{item.type_name}}</text>
+                                    <text class="desc">{{item.desc}}</text>
+                                    <navigator url="/pages/list/index?id={{item.id}}&index={{index}}" hover-class="none">
+                                        <view class="btn">Next</view>
+                                    </navigator>
+                                </view>
+                            </view> 
+                        </view>
+                    </swiper-item>
                 </block>
-            </scroll-view>
-        </swiper-item>
-    </swiper>
+            </swiper>
+        </view>
+    </view>
+
 </view>

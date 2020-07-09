@@ -18,21 +18,19 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.request({
-      url: app.openApi + '/index.php/Article/queryOne.html?',
-      method: 'GET',
-      dataType: 'json',
+    let obj = {
+      url: '/index.php/Article/queryOne.html',
       data: { "id": options.id },
-      // data: { "id": 1 },
-      success: function (res) {
-        that.setData({
-          detail: res.data
-        });
-        wx.setNavigationBarTitle({
-          title: res.data.title
-        })
-        WxParse.wxParse('article', 'html', res.data.content, that, 5);
-      }
+      method: 'GET'
+    }
+    app.globalData.https(obj).then(res => {
+      that.setData({
+        detail: res
+      });
+      wx.setNavigationBarTitle({
+        title: res.title
+      })
+      WxParse.wxParse('article', 'html', res.content, that, 5);
     })
   },
 

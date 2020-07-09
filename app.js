@@ -1,7 +1,11 @@
 //app.js
+const  https = require("./utils/api")
 App({
   onLaunch: function () {
   
   },
-  openApi: "https://openapi.crazydesign.top"
+  globalData: {
+    https: https.http,
+    openApi: "https://openapi.crazydesign.top"
+  },
 })

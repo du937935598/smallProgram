@@ -1,0 +1,61 @@
+/* pages/list/index.wxss */
+page{
+  background-color: #f6f8fa;
+}
+.list{
+  position: relative;
+}
+.list .bg{
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  height: 100rpx;
+}
+.list .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding-bottom: 40rpx;
+}
+.lists{
+  width: 94%;
+  margin: auto;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 0rpx 10rpx #eee;
+  margin-top: 20rpx;
+}
+.list navigator{
+  display: flex;
+}
+.lists .left{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid #eee;
+}
+.lists .left image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.lists .right{
+  margin-left: 20rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lists .right .title{
+  font-size: 28rpx;
+  color: #333;
+}
+.lists .right .desc{
+  font-size: 24rpx;
+  color: #999;
+}
+

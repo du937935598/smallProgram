@@ -1,0 +1,17 @@
+<!--pages/list/index.wxml-->
+<view class="list" style="height: {{winHeight}}px">
+  <view class="bg" style="background: {{color}}"></view>
+  <view class="content" style="height: {{winHeight}}px">
+    <view class="lists"  wx:for="{{dataList}}" wx:key="*this">
+      <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="none">
+        <view class="left">
+          <image src="{{item.icon}}" mode="aspectFit" />
+        </view>
+        <view class="right">
+          <view class="title">{{item.title}}</view>
+          <view class="desc">{{item.introduction}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

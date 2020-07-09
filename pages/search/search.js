@@ -31,7 +31,6 @@ Page({
         dataType: 'json',
         data: { "like": that.data.keyworld },
         success: function (res) {
-          console.log(res.data);
           that.setData({
             searchList: res.data
           });
@@ -41,7 +40,6 @@ Page({
       that.setData({
         searchList: []
       });
-      console.log(that.data.searchList == [])
     }
   },
 
@@ -56,11 +54,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.showToast({
-      title: '由于服务武器扛不住，不敢用输入同时搜索，除非能被富婆包养',
-      icon: 'none',
-      duration: 4000
-    })
+    
   },
 
   /**
